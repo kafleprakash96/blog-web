@@ -1,0 +1,71 @@
+/* Container for each blog post */
+.container {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for each blog post */
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+/* Content styling */
+.content {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Description styling */
+.description {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.6em;
+  }
+
+  .content {
+    font-size: 1.1em;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.4em;
+  }
+
+  .content {
+    font-size: 1em;
+  }
+
+  .description {
+    font-size: 0.8em;
+  }
+}
