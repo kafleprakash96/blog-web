@@ -1,14 +1,20 @@
 import {Component, OnInit} from '@angular/core';
 import {PostService} from "../post.service";
-import {AsyncPipe, KeyValuePipe, NgForOf, NgIf} from "@angular/common";
+import {AsyncPipe, KeyValuePipe, NgFor, NgForOf, NgIf} from "@angular/common";
+import {MatCard, MatCardActions, MatCardHeader, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
+import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    NgForOf,
-    KeyValuePipe,
-    AsyncPipe,
+    NgFor,
+    MatCardHeader,
+    MatCard,
+    MatCardActions,
+    MatButton,
+    MatCardTitle,
+    MatCardSubtitle,
     NgIf
   ],
   templateUrl: './home.component.html',
@@ -17,6 +23,8 @@ import {AsyncPipe, KeyValuePipe, NgForOf, NgIf} from "@angular/common";
 export class HomeComponent implements OnInit{
 
   public posts: any;
+
+  public expandedPostId : number | null = null;
 
   constructor(private postService:PostService) {
   }
@@ -31,6 +39,10 @@ export class HomeComponent implements OnInit{
       this.posts = post;
      }
    );
+  }
+
+  togglePost(postId : number){
+    this.expandedPostId = this.expandedPostId === postId ? null : postId;
   }
 
 }
