@@ -14,14 +14,24 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### BACKEND : SPRING BOOT
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Clone the project : rest-blog-api
 
-## Further help
+```bash
+git clone https://github.com/kafleprakash96/rest-api-blog.git
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run the spring boot application
+
+Use api `http://localhost:8080/api/posts` to save some data or manually add some information in database.
+
+After running the Spring boot and Angular application. You will see something like below with your backend data
+
+![home-page.png](src/assets/github/home-page.png)
+
+
+
+
