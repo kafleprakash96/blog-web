@@ -28,9 +28,16 @@ Run the spring boot application
 
 Use api `http://localhost:8080/api/posts` to save some data or manually add some information in database.
 
-After running the Spring boot and Angular application. You will see something like below with your backend data
+After running the Spring boot and Angular application. You will see something like below with your backend data.
 
 ![home-page.png](src/assets/github/home-page.png)
+
+Click on Add Post button on top right to create new post.
+
+![create-post.png](src/assets/github/create-post.png)
+
+Verify the data in the database.
+
 
 
 
