@@ -3,6 +3,8 @@ import {PostService} from "../post.service";
 import {AsyncPipe, KeyValuePipe, NgFor, NgForOf, NgIf} from "@angular/common";
 import {MatCard, MatCardActions, MatCardHeader, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
+import {PostComponent} from "../post/post.component";
+import {RouterLink, RouterLinkActive, RouterModule, RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -15,7 +17,10 @@ import {MatButton} from "@angular/material/button";
     MatButton,
     MatCardTitle,
     MatCardSubtitle,
-    NgIf
+    NgIf,
+    RouterLinkActive,
+    RouterLink,
+    RouterOutlet,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
